@@ -20,7 +20,7 @@ dependencies:
   - netcdf4 >=1.5.0
   - numba >=0.43
   - numpy >=1.16
-  - pandas >=0.24
+  - pandas >=0.24, <=1.0 #  https://github.com/pydata/xarray/commit/59f57f3e410aca19a722c4a0d84359bde9852fbf restriction of pandas should be removed with new xarray release
   - pillow >=6.0
   - proj4 >=5.2
   - pyjwt >= 1.7
