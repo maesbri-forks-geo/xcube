@@ -483,8 +483,6 @@ class TestWriteAndReadS3Bucket(unittest.TestCase):
             self.assertIsInstance(cube, xr.Dataset)
         delete_bucket(s3_conn, TEST_BUCKET)
 
-
-class TestWriteAndReadS3PublicBucket(unittest.TestCase):
     @unittest.skipUnless(MOTO_SERVER_IS_RUNNING, MOTO_SKIP_HELP)
     @mock_s3
     def test_upload_and_read_from_s3_public_read(self):
